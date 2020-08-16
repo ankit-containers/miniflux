@@ -1,0 +1,15 @@
+image: "docker:latest"
+
+services:
+- docker:dind
+
+before_script:
+- docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
+
+build:
+  script:
+  - docker build -t "miniflux" .
+  - docker tag "miniflux" "$CI_REGISTRY/$CI_PROJECT_PATH/miniflux:2.0.23"
+  - docker tag "miniflux" "$CI_REGISTRY/$CI_PROJECT_PATH/miniflux:latest"
+  - docker push "$CI_REGISTRY/$CI_PROJECT_PATH/miniflux:2.0.23"
+  - docker push "$CI_REGISTRY/$CI_PROJECT_PATH/miniflux:latest"
