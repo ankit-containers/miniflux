@@ -1,0 +1,4 @@
+data/
+backup/
+miniflux.env
+pg.env
