@@ -1,6 +1,6 @@
 # Miniflux
 
-![Pipeline](https://gitlab.com/ankit-containers/miniflux/badges/main/pipeline.svg)
+[![Pipeline](https://gitlab.com/ankit-containers/miniflux/badges/main/pipeline.svg)](https://gitlab.com/ankit-containers/miniflux/-/pipelines)
 
 Miniflux is an open-source minimalist Feed Reader written in Go. It is simple
 to use, and it integrates with third-party services like Pinboard, Instapaper,
