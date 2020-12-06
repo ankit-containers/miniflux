@@ -9,7 +9,7 @@ before_script:
 build:
   script:
   - docker build -t "miniflux" .
-  - docker tag "miniflux" "$CI_REGISTRY/$CI_PROJECT_PATH/miniflux:2.0.25"
+  - docker tag "miniflux" "$CI_REGISTRY/$CI_PROJECT_PATH/miniflux:2.0.26"
   - docker tag "miniflux" "$CI_REGISTRY/$CI_PROJECT_PATH/miniflux:latest"
-  - docker push "$CI_REGISTRY/$CI_PROJECT_PATH/miniflux:2.0.25"
+  - docker push "$CI_REGISTRY/$CI_PROJECT_PATH/miniflux:2.0.26"
   - docker push "$CI_REGISTRY/$CI_PROJECT_PATH/miniflux:latest"

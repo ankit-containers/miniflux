@@ -5,12 +5,12 @@
 FROM alpine:latest
 LABEL MAINTAINER="Ankit R Gadiya git@argp.in"
 
-ENV MINIFLUX_VERSION="2.0.25"
+ENV MINIFLUX_VERSION="2.0.26"
 
 RUN apk --update --no-cache add ca-certificates tzdata \
   && wget \
   -O "/usr/local/bin/miniflux" \
-  "https://github.com/miniflux/miniflux/releases/download/${MINIFLUX_VERSION}/miniflux-linux-amd64" \
+  "https://github.com/miniflux/v2/releases/download/${MINIFLUX_VERSION}/miniflux-linux-amd64" \
   && chmod +x "/usr/local/bin/miniflux"
 
 COPY ./entrypoint.sh /entrypoint.sh
