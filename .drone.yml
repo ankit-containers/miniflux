@@ -1,0 +1,15 @@
+kind: pipeline
+type: kubernetes
+name: default
+steps:
+- name: image-build
+  image: plugins/kaniko
+  settings:
+    repo: quay.io/ankitrgadiya/miniflux
+    dockerfile: ./Dockerfile
+    registry: quay.io
+    tags: ["latest", "2.0.26"]
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password

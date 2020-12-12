@@ -1,6 +1,6 @@
 # Miniflux
 
-[![Pipeline](https://gitlab.com/ankit-containers/miniflux/badges/main/pipeline.svg)](https://gitlab.com/ankit-containers/miniflux/-/pipelines)
+[![Build Status](https://drone.argd.in/api/badges/meta/miniflux/status.svg)](https://drone.argd.in/meta/miniflux)
 
 Miniflux is an open-source minimalist Feed Reader written in Go. It is simple to
 use, and it integrates with third-party services like Pinboard, Instapaper, and
@@ -41,7 +41,7 @@ docker run -d \
 	-e POSTGRES_PASSWORD="password" \
 	-e LISTEN_ADDR="0.0.0.0:8080" \
 	-p 8080:8080 \
-	registry.gitlab.com/ankit-containers/miniflux/miniflux:latest \
+	quay.io/ankitrgadiya/miniflux:latest
 ```
 
 **Tip**: Set `RUN_MIGRATIONS` environment variable to automatically run database
