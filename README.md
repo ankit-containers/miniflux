@@ -1,6 +1,8 @@
 # Miniflux
 
+[![Source Code](https://img.shields.io/badge/source-gitea-blue)](https://git.argc.in/meta/miniflux)
 [![Build Status](https://drone.argd.in/api/badges/meta/miniflux/status.svg)](https://drone.argd.in/meta/miniflux)
+[![Registry](https://img.shields.io/badge/registry-quay.io-red)](https://quay.io/repository/ankitrgadiya/miniflux?tab=tags)
 
 Miniflux is an open-source minimalist Feed Reader written in Go. It is simple to
 use, and it integrates with third-party services like Pinboard, Instapaper, and
@@ -44,7 +46,7 @@ docker run -d \
 	quay.io/ankitrgadiya/miniflux:latest
 ```
 
-**Tip**: Set `RUN_MIGRATIONS` environment variable to automatically run database
+**TIP**: Set `RUN_MIGRATIONS` environment variable to automatically run database
 migrations.
 
 Once the Miniflux server is running, create the admin user by executing in the
@@ -53,3 +55,9 @@ container.
 ```bash
 docker exec -it miniflux miniflux -create-admin
 ```
+
+## Releases
+
+Miniflux project follows semantic versioning. So, the image tags will correspond
+to the upstream release versions. The `latest` tag will always point to the most
+recent release. I intend to provide all versions from "2.0.26" onwards.
