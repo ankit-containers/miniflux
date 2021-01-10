@@ -5,7 +5,7 @@
 FROM alpine:latest
 LABEL MAINTAINER="Ankit R Gadiya git@argp.in"
 
-ENV MINIFLUX_VERSION="2.0.26"
+ENV MINIFLUX_VERSION="2.0.27"
 
 RUN apk --update --no-cache add ca-certificates tzdata \
   && wget \

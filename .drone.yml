@@ -8,7 +8,7 @@ steps:
     repo: quay.io/ankitrgadiya/miniflux
     dockerfile: ./Dockerfile
     registry: quay.io
-    tags: ["latest", "2.0.26"]
+    tags: ["latest", "2.0.27"]
     username:
       from_secret: docker_username
     password:
