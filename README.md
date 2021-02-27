@@ -1,7 +1,5 @@
 # Miniflux
 
-[![Source Code](https://img.shields.io/badge/source-gitea-blue)](https://git.argc.in/meta/miniflux)
-[![Build Status](https://drone.argd.in/api/badges/meta/miniflux/status.svg)](https://drone.argd.in/meta/miniflux)
 [![Registry](https://img.shields.io/badge/registry-quay.io-red)](https://quay.io/repository/ankitrgadiya/miniflux?tab=tags)
 
 Miniflux is an open-source minimalist Feed Reader written in Go. It is simple to
